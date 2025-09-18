@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova1</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Primeira tela -->
+        <div class="screen active" id="tela1">
+            <div class="main-title">Meu App</div>
+            <div class="description">Bem-vindo ao meu projeto da disciplina</div>
+            <div class="student-name">Joao Luiz Rodrigues Teixeira</div>
+            <div class="description">Use os botões abaixo para navegar entre as telas</div>
+        </div>
+
+        <!-- Segunda tela -->
+        <div class="screen screen2" id="tela2">
+            <button class="back-btn" onclick="mostrarTela(1)">Voltar</button>
+            <div class="main-title">Imagem da Web</div>
+            <img src="https://picsum.photos/300/200?random=42" alt="Foto da internet" class="web-img">
+            <div class="description">Esta imagem foi carregada da internet</div>
+        </div>
+
+        <!-- Terceira tela -->
+        <div class="screen" id="tela3">
+            <button class="back-btn" onclick="mostrarTela(1)">Voltar</button>
+            <div class="main-title">Imagem Local</div>
+            <img src="images/sorriso.jpg" alt="Imagem local" class="local-img">
+            <div class="description">Esta é uma imagem local do projeto</div>
+        </div>
+
+        <!-- Quarta tela -->
+        <div class="screen" id="tela4">
+            <button class="back-btn" onclick="mostrarTela(1)">Voltar</button>
+            <div class="main-title">Ícones</div>
+            <div class="icons-row">
+                <div class="icon-item icon1">⭐</div>
+                <div class="icon-item icon2">🔥</div>
+                <div class="icon-item icon3">💎</div>
+            </div>
+            <div class="description">Três ícones com cores diferentes</div>
+        </div>
+
+        <!-- Navegação -->
+        <div class="nav-buttons">
+            <button class="nav-btn active" onclick="mostrarTela(1)">Início</button>
+            <button class="nav-btn" onclick="mostrarTela(2)">Web</button>
+            <button class="nav-btn" onclick="mostrarTela(3)">Local</button>
+            <button class="nav-btn" onclick="mostrarTela(4)">Ícones</button>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
